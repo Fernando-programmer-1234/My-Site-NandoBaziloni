@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name=""viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site NandoBaziloni</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #6a0dad; /* roxo */
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        .grupo {
+            margin-bottom: 30px;
+        }
+
+        .titulo {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .balao {
+            display: inline-block;
+            background: #1f1f1f;
+            padding: 12px;
+            margin: 8px;
+            width: 220px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        /* CONTATO → verde (WhatsApp vibe) */
+        .contato:hover {
+            background: #25D366;
+            transform: scale(1.08);
+        }
+
+        /* INSTAGRAM → rosa */
+        .insta:hover {
+            background: #E1306C;
+            transform: scale(1.08);
+        }
+
+        /* TIKTOK → azul claro */
+        .tiktok:hover {
+            background: #69C9D0;
+            transform: scale(1.08);
+        }
+
+        /* LINKEDIN → azul */
+        .linkedin:hover {
+            background: #0A66C2;
+            transform: scale(1.08);
+        }
+        
+        @media (max-width: 600px) {
+    .balao {
+        width: 90%;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    
+    <h1>O que você procura?</h1>
+
+    <p>Escolha uma opção abaixo para continuar 👇</p>
+
+    <!-- CONTATO -->
+    <div class="grupo">
+        <div class="titulo">Entrar em contato</div>
+
+        <div class="balao contato" onclick="alert('Abrindo WhatsApp...'); window.location.href = 'https://wa.me/5511912155842?text=' + encodeURIComponent('Olá, gostaria de mais informações sobre seus serviços.')">
+            Fazer meu site
+        </div>
+
+        <div class="balao contato" onclick="alert('Abrindo WhatsApp...'); window.location.href = 'https://wa.me/5511912155842?text=' + encodeURIComponent('Olá, gostaria de fazer uma reclamação.')">
+            Reclamação
+        </div>
+
+        <div class="balao contato" onclick="alert('Abrindo WhatsApp...'); window.location.href = 'https://wa.me/5511912155842?text=' + encodeURIComponent('Olá, gostaria de avaliar seus serviços.')">
+            Avaliar
+        </div>
+    </div>
+
+    <!-- REDES -->
+    <div class="grupo">
+        <div class="titulo">Redes sociais</div>
+
+        <div class="balao insta" onclick="alert('Abrindo Instagram...'); window.location.href = 'https://www.instagram.com/ndkkjzz'">
+            Instagram
+        </div>
+
+        <div class="balao tiktok" onclick="alert('Abrindo TikTok...'); window.location.href = 'https://www.tiktok.com/ndkkjzz'">
+            Tik Tok
+        </div>
+
+        <div class="balao linkedin" onclick="alert('Abrindo LinkedIn...'); window.location.href = 'https://www.linkedin.com/in/fernando-baziloni-770711368'">
+            LinkedIn
+        </div>
+    </div>
+
+</body>
+</html>
